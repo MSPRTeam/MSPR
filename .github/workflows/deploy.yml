@@ -1,0 +1,15 @@
+name: Deploy
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Run App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build App
+        run: |
+          echo "Build App"
+          sleep 10s
