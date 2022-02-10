@@ -11,7 +11,6 @@ public abstract class LireTxtRep {
     public static File [] TxtFiles(String rep){
         //TODO récupérer les infos du matériel
         // répertoire de recherche
-        rep = CheminRepertoires.repAbsolue;
         // construction d'un fichier sur ce répertoire
         File repFile =  new File(rep) ;
 

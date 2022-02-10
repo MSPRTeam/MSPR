@@ -18,6 +18,7 @@ public class MaterielFichierStockage implements MaterielStockageInterface {
         String libelle="";
         try
         {
+            //todo remplacer l'index 0 par le le basename
             lecteurAvecBuffer = new BufferedReader(new FileReader(LireTxtRep.TxtFiles(CheminRepertoires.repAbsolue)[0]));
         }
         catch(FileNotFoundException exc)
@@ -40,8 +41,6 @@ public class MaterielFichierStockage implements MaterielStockageInterface {
 
         }
         lecteurAvecBuffer.close();
-        System.out.println(materiel.get(0));
-        System.out.println(materiel.get(1));
 
         return new Materiel(materiel.get(0), materiel.get(1));
     }

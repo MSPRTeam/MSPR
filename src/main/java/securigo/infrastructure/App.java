@@ -1,5 +1,11 @@
 package securigo.infrastructure;
 
+import securigo.chemins.CheminRepertoires;
+import securigo.chemins.LireTxtRep;
+import securigo.domaine.Agent;
+import securigo.main.run;
+import securigo.services.AgentStockageInterface;
+
 import java.io.*;
 
 /**
@@ -10,9 +16,7 @@ public class App
 {
     public static void main( String[] args ) throws IOException, NullPointerException
     {
-        // materiel stockage
-        MaterielFichierStockage materielFichierStockage=new MaterielFichierStockage();
-        System.out.println(materielFichierStockage.recupererMateriel("gants"));
+        run.main();
     }
 
 }
